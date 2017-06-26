@@ -1,0 +1,30 @@
+<!-- 4.  I detta steg (när användaren skickar data) visar applikationen en -->
+<!--     bekräftelse på skärmen. Följande information ska visas: -->
+<!--     Incheckningsdatum -->
+<!--     Utcheckningsdatum -->
+<!--     Rummet (namn och pris) -->
+<!--     Antal vuxna och barn -->
+<!--     Beställarens för- och efternamn -->
+<!--     E-post -->
+<!--     Mobil/telefon -->
+<ion-view>
+    <div class="bar bar-subheader padding">
+        <p class="sub-header">Tack för din bokning!</p>
+    </div>
+    <ion-content class="padding has-subheader">
+        <h4>Följande har reserverats:</h4>
+        <hr>
+        <p>Incheckningsdatum: {{reservation.checkinDate | date}}</p>
+        <p>Utcheckningsdatum: {{reservation.checkoutDate | date}}</p>
+        <p>Rum: {{reservation.room}}</p>
+        <p>Pris per natt: {{reservation.price}}</p>
+        <p>Antal vuxna: {{reservation.numAdults}}</p>
+        <p>Antal barn: {{reservation.numChildren}}</p>
+        <p>Förnamn: {{reservation.firstName}}</p>
+        <p>Efternamn: {{reservation.surName}}</p>
+        <p>E-post: {{reservation.email}}</p>
+        <p>Mobil/telefon: {{reservation.phone}}</p>
+        <hr>
+        <p class="receipt-greeting">Ha en trevlig vistelse!</p>
+    </ion-content>
+</ion-view>

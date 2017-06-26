@@ -1,0 +1,30 @@
+<!-- 3. Användaren matar in förnamn, efternamn. e-post och telefonnummer. -->
+<!--    Alla fält är obligatoriska. E-postadressen måste valideras. -->
+<!--    Visa lämpliga felmeddelanden. -->
+<ion-view>
+    <div class="bar bar-subheader padding">
+        <p class="sub-header">Fyll i dina detaljer!</p>
+    </div>
+    <ion-content class="padding has-subheader">
+        <form ng-controller="accommodationController" name="dForm" ng-submit="detailForm(reservation)">
+            <div class="list">
+                <label class="item item-input">
+                    <input type="text" name="firstName" ng-model="reservation.firstName" ng-minlength="2" placeholder="Förnamn" required>
+                    <span class="error-message" ng-show="dForm.firstName.$error.minlength">Minst 2 bokstäver</span>
+                </label>
+                <label class="item item-input">
+                    <input type="text" name="surName" ng-model="reservation.surName" ng-minlength="2" placeholder="Efternamn" required>
+                    <span class="error-message" ng-show="dForm.surName.$error.minlength">Minst 2 bokstäver</span>
+                </label>
+                <label class="item item-input">
+                    <input type="email" name="emailAddress" ng-model="reservation.email" placeholder="E-post" required>
+                    <span class="error-message" ng-show="dForm.emailAddress.$error.email">Ej valid e-post address</span>
+                </label>
+                <label class="item item-input">
+                    <input type="tel" ng-model="reservation.phone" placeholder="Telefonnummer" required>
+                </label>
+            </div>
+            <button class="button button-block button-dark" ng-disabled="dForm.$invalid" type="submit">Boka nu</button>
+        </form>
+    </ion-content>
+</ion-view>

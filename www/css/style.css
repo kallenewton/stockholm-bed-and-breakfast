@@ -1,0 +1,37 @@
+.body {
+    font-size: 100%;
+}
+
+.sub-header {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+
+.home-logo {
+    width : 100px;
+    height: auto;
+}
+
+.home-slogan {
+    text-align: center;
+    font-size: 1.125em;
+    font-style: italic;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.date-label {
+    padding-right: 20px;
+}
+
+.receipt-greeting {
+    text-align: center;
+    font-size: 1.8em;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+.error-message {
+    color: red;
+}

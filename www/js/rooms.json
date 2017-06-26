@@ -1,0 +1,34 @@
+{
+    "rooms": [
+        {
+            "name": "Singel Rum Vinter",
+            "shortname": "single_room_winter",
+            "price": "200 SEK",
+            "description": "Enkelrum med vinterutsikt."
+        },
+        {
+            "name": "Singel Rum Vår",
+            "shortname": "single_room_spring",
+            "price": "300 SEK",
+            "description": "Enkelrum med vårutsikt."
+        },
+        {
+            "name": "Dubbel Rum Sommar",
+            "shortname": "double_room_summer",
+            "price": "500 SEK",
+            "description": "Dubbelrum med sommarutsikt."
+        },
+        {
+            "name": "Dubbel Rum Höst",
+            "shortname": "double_room_autumn",
+            "price": "400 SEK",
+            "description": "Dubbelrum med höstutsikt."
+        },
+        {
+            "name": "Familje Rum Alla Årstider",
+            "shortname": "family_room_all_seasons",
+            "price": "800 SEK",
+            "description": "Familjerum med utsikt åt alla årstider."
+        }
+    ]
+}

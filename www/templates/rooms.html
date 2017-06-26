@@ -1,0 +1,23 @@
+<!-- 2. I nästa steg ska användaren se en lista över alla rum. -->
+<!--    Varje rum har namn, bild, beskrivning och pris per natt -->
+<!--    Information om alla rum hämtas från en JSON-fil. -->
+<!--    Skapa en JSON-fil med fiktiv information om alla 5 rum. -->
+<!--    2 singel, 2 dubbel, 1 familj -->
+<ion-view>
+    <div class="bar bar-subheader padding">
+        <p class="sub-header">Välj bland tillgängliga rum!</p>
+    </div>
+    <ion-content class="padding has-subheader">
+        <form ng-controller="accommodationController" ng-submit="roomForm()">
+            <ion-list>
+                <ion-radio class="item-thumbnail-left item-text-wrap" ng-repeat="room in rooms" ng-click="getRoomObject(room)">
+                    <img ng-src="img/{{room.shortname}}.jpg">
+                    <p>{{room.name}}</p>
+                    <p>{{room.price}} / natt</p>
+                    <p>{{room.description}}</p>
+                </ion-radio>
+            </ion-list>
+            <button class="button button-block button-dark" ng-disabled="roomNotSelected" type="submit">Fortsätt</button>
+        </form>
+    </ion-content>
+</ion-view>
